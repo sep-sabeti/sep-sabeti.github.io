@@ -14,9 +14,9 @@ def get_personal_data():
                 </p> -->
                 <p>
                     <span style="font-weight: bold;">Bio:</span> 
-                    I am a PhD candidate at <a href="https://engr.charlotte.edu/" target="_blank"> the William States Lee College of Engineering</a> of <a href="https://charlotte.edu/" target="_blank"> the UNC Charlotte</a> supervised by <a href="https://sites.google.com/uncc.edu/siamlab/people?authuser=0" target="_blank">Omid Shoghli</a>.
+                    I am a PhD candidate at <a href="https://engr.charlotte.edu/" target="_blank"> the William States Lee College of Engineering</a> of <a href="https://charlotte.edu/" target="_blank"> UNC Charlotte</a> supervised by <a href="https://sites.google.com/uncc.edu/siamlab/people?authuser=0" target="_blank">Omid Shoghli</a>.
                     During my PhD studies, I joined <a href="https://www.servicenow.com/research/">ServiceNow Research</a> for an internship with the AI platform team, focusing on Human-AI interaction.
-                    I also a MSc in Computer Science from the <a href="https://cci.charlotte.edu/computer-science/45/5" target="_blank">College of Computing and Informatics of UNC Charlotte </a> in 2022 and another MSc in Civil Engineering from the <a href="https://www.topuniversities.com/universities/iran-university-science-technology" target="_blank">Iran University of Science in Technology (IUST) </a> in 2018.
+                    I also received a MSc in Computer Science from the <a href="https://cci.charlotte.edu/computer-science/45/5" target="_blank">College of Computing and Informatics of UNC Charlotte </a> in 2022 and another MSc in Civil Engineering from <a href="https://www.topuniversities.com/universities/iran-university-science-technology" target="_blank">Iran University of Science in Technology (IUST) </a> in 2018.
                     In May 2019, I started my PhD in the <a href="https://ines.charlotte.edu/" target="_blank">Infrastructure and Environmental Systems (INES) </a> program at UNCC. 
                     In 2022 I joined <a href="https://www.leidos.com/markets/energy/transportation">Leidos</a> Surface Transportation Portfolio in the Civil Group for an internship and subsequently as a data scientist. I have contributed to the development of state-of-the-art highway asset management program at Leidos under the Maintenance Rating Program (MRP), and have closely collaborated with the Virginia Department of Transportation (VDOT) Subject Matter Experts (SMEs) on developing advanced and predictive decision support systems for intelligence maintenance allocation.
                 </p>
@@ -133,7 +133,7 @@ def get_talk_entry(entry_key, entry):
 
 def get_publications_html():
     parser = bibtex.Parser()
-    bib_data = parser.parse_file('/Users/sepsabeti/Downloads/m-niemeyer.github.io-master/publication_list.bib')
+    bib_data = parser.parse_file('/Users/sepsabeti/Downloads/sep-sabeti.github.io-main/publication_list.bib')
     keys = bib_data.entries.keys()
     s = ""
     for k in keys:
@@ -142,7 +142,7 @@ def get_publications_html():
 
 def get_talks_html():
     parser = bibtex.Parser()
-    bib_data = parser.parse_file('/Users/sepsabeti/Downloads/m-niemeyer.github.io-master/talk_list.bib')
+    bib_data = parser.parse_file('/Users/sepsabeti/Downloads/sep-sabeti.github.io-main/talk_list.bib')
     keys = bib_data.entries.keys()
     s = ""
     for k in keys:
@@ -227,4 +227,4 @@ def write_index_html(filename='index.html'):
     print(f'Written index content to {filename}.')
 
 if __name__ == '__main__':
-    write_index_html('/Users/sepsabeti/Downloads/m-niemeyer.github.io-master/index.html')
+    write_index_html('/Users/sepsabeti/Downloads/sep-sabeti.github.io-main/index.html')
